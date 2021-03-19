@@ -1,7 +1,7 @@
 """
 Date: 2021 03 12
 Problems: CV + Code + Machine Learning
-Result:
+Result: Fail
 """
 
 import random
