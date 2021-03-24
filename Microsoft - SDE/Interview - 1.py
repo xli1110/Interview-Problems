@@ -10,10 +10,13 @@ class Problem1:
     Machine Learning
 
     1 - Tree
-    classification, regression
+    classification
+    regression
 
     2 - Ensemble Learning
-    loss function
+    loss function(exponential loss, MSE)
+    GBDT(residual and negative gradient)
+
 
     3 - Pick the most familiar model.(Linear Regression)
     When is MSE the best depending on labels' distribution?
