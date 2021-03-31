@@ -1,7 +1,7 @@
 """
 Date: 2021 03 30
 Problem: Online Assignment
-Result: Pass 12 Test Cases
+Result: Pass All 12 Test Cases
 """
 
 
