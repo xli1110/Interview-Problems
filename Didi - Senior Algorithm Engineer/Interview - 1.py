@@ -1,7 +1,7 @@
 """
 Date: 2021 03 12
 Problems: CV + Code + Machine Learning
-Result: Fail
+Result: Fail, the interviewer is a shabi (price decision group)
 """
 
 import random
