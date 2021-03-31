@@ -17,7 +17,6 @@ class Problem1:
     loss function(exponential loss, MSE)
     GBDT(residual and negative gradient)
 
-
     3 - Pick the most familiar model.(Linear Regression)
     When is MSE the best depending on labels' distribution?
     """
@@ -27,7 +26,7 @@ class Problem2:
     """
     Binary Search
     LeetCode - 35
-    Interviewed on 9 p.m. Friday.
+    Interviewed at 9 p.m. Friday.
     Tired AF, then wrote code below with linear iteration not logarithmic.
     """
 
