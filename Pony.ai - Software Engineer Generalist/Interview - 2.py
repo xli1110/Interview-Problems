@@ -1,6 +1,6 @@
 """
 Date: 2021 03 04
-Problems: CV + Code + Machine Learning
+Problems: CV + Machine Learning + Code
 Result: Pass
 """
 

@@ -1,7 +1,7 @@
 """
 Date: 2021 04 06
-Problem: QA + Code
-Result:
+Problems: QA + Code
+Result: Fail
 """
 
 
@@ -24,7 +24,7 @@ class Problem1:
 class Problem2:
     """
     Leetcode 3
-    Longest sub-string
+    Longest Sub-String
     """
 
     def sub_string(self, s):

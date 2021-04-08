@@ -1,6 +1,6 @@
 """
 Date: 2021 03 12
-Problems: CV + Code + Machine Learning
+Problems: CV + Machine Learning + Code
 Result: Fail, the interviewer is a shabi from price decision group.
 """
 

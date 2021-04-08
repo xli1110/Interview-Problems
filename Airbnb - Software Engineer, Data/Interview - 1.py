@@ -1,6 +1,6 @@
 """
 Date: 2021 03 30
-Problem: Online Assignment
+Problems: Online Assignment
 Result: Pass All 12 Test Cases
 """
 
