@@ -1,7 +1,7 @@
 """
 Date: 2021 04 07
 Problems: CV + Machine Learning + Code
-Result:
+Result: Fail, they said they need one more experienced.
 """
 
 

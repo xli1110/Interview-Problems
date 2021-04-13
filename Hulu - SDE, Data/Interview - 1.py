@@ -1,7 +1,8 @@
 """
 Date: 2021 04 09
 Problems: CV + Code
-Result: The interview experience is the best till now. Very nice interviewer.
+Result: Pass
+        The interview experience is the best till now. Very nice interviewer.
 """
 from collections import deque
 

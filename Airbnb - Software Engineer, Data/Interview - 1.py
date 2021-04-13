@@ -50,7 +50,7 @@ class Problem1:
             return "missing closing tag for <{0}>".format(stack[-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     xml = "2sddaq<qwe><ww></qwe>"
 
     sol = Problem1()
