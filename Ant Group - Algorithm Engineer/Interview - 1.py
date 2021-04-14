@@ -1,7 +1,7 @@
 """
 Date: 2021 04 12
 Problems: CV + Machine Learning
-Result:
+Result: Fail
 """
 
 
@@ -18,5 +18,7 @@ class Problem1:
     Boosting vs Bagging
 
     Gradient Descend
+
+    Batch Gradient Descend
     """
 
