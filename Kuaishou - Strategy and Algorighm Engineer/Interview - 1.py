@@ -2,7 +2,6 @@
 Date: 2021 04 14
 Problems: CV + Machine Learning + Code
 Result: Fail
-        Interesting interviewer.
 """
 
 
