@@ -1,134 +1,47 @@
 """
 Date: 2021 04 14
-Problems: CV + Code
+Problems: CV + Machine Learning + Code
 Result:
+        Interesting interviewer.
 """
-from collections import deque
-
-
-class Node:
-    def __init__(self):
-        self.val = ""
-        self.children = []
 
 
 class Problem1:
     """
-    Print Tree
+    GBDT vs XGBoost
 
-    @FakeMesa ~/P/A/mola (master)> tree
-    .
-    ├── README.md
-    ├── charts
-    │   └── mola
-    │       ├── Chart.yaml
-    │       ├── README.md
-    │       ├── templates
-    │       │   ├── autoscaling.yaml
-    │       │   ├── deployment.yaml
-    │       │   ├── nginx-config.yaml
-    │       │   ├── scheduledscaling.yaml
-    │       │   ├── service.yaml
-    │       │   ├── serviceaccount.yaml
-    │       │   └── sigsci-config.yaml
-    │       └── values.yaml
-    ├── cw-fill-query.json
-    ├── pipelines
-    │   ├── auto-multi-deploy.pp
-    │   ├── delete-resources.pp
-    │   └── simple-deploy.pp
-    └── values
-        ├── aor.yaml
-        ├── ava.yaml
-        ├── base_values.yaml
-        └── target_environment_values.yaml
+    Performance Evaluation
 
-    I defined the Node class.
-    The interviewer defined the tree generation function and the test sample when I wrote the BFS.
-
-    I - Consider corner case exception?
-    Int - No.
-
-    Wrote the BFS, stuck.
-
-    I - Can we have a pointer designating the parent in the Node class?
-    Int - Yes, but it is not difficult as you think. How do you traverse the tree to print the example?
-    I - Preorder if we treat the top as left.
-    Int - Yes.
-
-    Wrote the DFS, stuck.
-
-    Int - How much space you need to indent?
-    I - Depends on the depth of the tree.
-
-    Wrote the depth, stuck in \beta.
-
-    Int - You can concatenate the string out of for loop.
-    I - Still stuck.
-    Int - WROTE \beta himself!
-
-    Int - You did not print leaves.
-    I - Try to add new print commands in \alpha.
-    Int - You can simply remove \alpha.
-
-    Finished.
+    Feature Concatenation
     """
 
-    def mNode(self, val, children):
-        n = Node()
-        n.val = val
-        n.children = children
-        return n
 
-    def BFS(self, root):
-        q = deque()
-        q.append(root)
-        res = []
+class Problem2:
+    """
+    Leetcode 78
+    Subsets
+    """
 
-        while q:
-            level = []
-            for _ in range(len(q)):
-                n = q.popleft()
-                level.append(n.val)
-                for child in n.children:
-                    q.append(child)
-            res.append(level)
+    def __init__(self):
+        self.path = []
+        self.res = []
 
-    def traverse(self, root, depth):
-        # \alpha
-        # if not root.children:
-        #     return
-        # \alpha
+    def DFS(self, arr):
+        if not arr:
+            self.res.append(self.path[:])
+            return
 
-        # \beta
-        result = ""
-        for _ in range(depth):
-            result += "|   "
-        # \beta
+        self.res.append(self.path[:])
 
-        result += "──" + "  " + root.val
-        print(result)
-
-        depth += 1
-
-        for child in root.children:
-            self.traverse(child, depth + 1)
+        for i in range(len(arr)):
+            self.path.append(arr[i])
+            self.DFS(arr[i + 1:])
+            self.path.pop()
 
 
 if __name__ == "__main__":
-    sol = Problem1()
+    sol = Problem2()
 
-    r = sol.mNode("root", [
-        sol.mNode("folder1", [
-            sol.mNode("folder11", [
-                sol.mNode("file1", [])
-            ]),
-            sol.mNode("file2", []),
-        ]),
-        sol.mNode("file3", []),
-        sol.mNode("folder2", [
-            sol.mNode("file4", [])
-        ])
-    ])
-
-    sol.traverse(r, 0)
+    arr = [1, 2, 3]
+    sol.DFS(arr)
+    print(sol.res)
