@@ -1,7 +1,8 @@
 """
 Date: 2021 04 20
 Problems: Two Coding Problems, 45 Minutes for Each
-Result: P1 - Suck in the m_tree function, did not complete.
+Result: Fail
+        P1 - Suck in the m_tree function, did not complete.
         P2 - Talk with the interviewer over 30 minutes, and draw the final conclusion.
              However, do not have enough time to complete it.
              Talk with the interviewer about the rest part.
@@ -156,14 +157,13 @@ class Problem2:
     Int - Right, try to implement your ideas.
     """
 
-
-    def check_exceed(self,x, y, X, Y):
+    def check_exceed(self, x, y, X, Y):
         if 0 <= x < X and 0 <= y < Y:
             return True
         else:
             return False
 
-    def BFS(self,x, y, X, Y, mat):
+    def BFS(self, x, y, X, Y, mat):
         dist = 0
         q = deque()
         q.append([x, y])
@@ -192,7 +192,7 @@ class Problem2:
 
         return mat
 
-    def find_shortest_dist(self,mat, X, Y):
+    def find_shortest_dist(self, mat, X, Y):
         dist = set()
         for i in range(X):
             for j in range(Y):
@@ -210,21 +210,6 @@ class Problem2:
             Time out at this point.
             The interviewer ask me to explain the rest part.
             """
-
-            # check availability
-            # set shorters None
-            for arr in temp:
-                for ele in temp:
-                    if
-                        None
-
-                BFS(temp)
-                break
-                short_dist
-
-            i -= 1
-
-
 
 
 if __name__ == "__main__":
