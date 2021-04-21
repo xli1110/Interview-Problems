@@ -205,6 +205,12 @@ class Problem2:
 
         while i >= 0:
             shortest_dist = dist[i]
+
+            """
+            Time out at this point.
+            The interviewer ask me to explain the rest part.
+            """
+
             # check availability
             # set shorters None
             for arr in temp:
@@ -218,10 +224,7 @@ class Problem2:
 
             i -= 1
 
-    """
-    Time out at this point.
-    The interviewer ask me to explain the rest part.
-    """
+
 
 
 if __name__ == "__main__":
