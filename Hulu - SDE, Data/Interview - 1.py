@@ -15,7 +15,7 @@ class Node:
 
 class Problem1:
     """
-    Print Tree
+    Print N-ary Tree
 
     @FakeMesa ~/P/A/mola (master)> tree
     .
