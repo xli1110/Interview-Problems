@@ -12,6 +12,8 @@ class Problem1:
 
     Storm Bolt Restart
     - Cutoff or Current Time
+
+    Why is storm faster than Flink and Spark Streaming?
     """
 
 

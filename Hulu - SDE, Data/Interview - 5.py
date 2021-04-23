@@ -10,4 +10,8 @@ class Problem1:
     SQL ROW_NUMBER
 
     Flink Windows Types
+
+    Spark Streaming
+
+    Batch/Stream
     """
