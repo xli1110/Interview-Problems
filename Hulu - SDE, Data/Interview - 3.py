@@ -10,6 +10,9 @@ class Problem1:
     Kafka Duplicate Consumption
     - Make a set for id and remove duplicates by searching the set.
 
+    Storm Debug
+    - Make logger.info() every line.
+
     Task Scheduler Execution
     How to keep topological order?
     How to find the starts?
